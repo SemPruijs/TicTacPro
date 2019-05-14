@@ -118,6 +118,15 @@
                     </view>
                     <connections>
                         <outlet property="hasWonLabel" destination="WWy-qM-nEU" id="hQ5-WC-dfb"/>
+                        <outletCollection property="buttons" destination="xgf-jl-9S6" collectionClass="NSMutableArray" id="Oq2-0F-ggU"/>
+                        <outletCollection property="buttons" destination="VS3-M3-Rmg" collectionClass="NSMutableArray" id="90w-hj-WCr"/>
+                        <outletCollection property="buttons" destination="EzH-Ks-VJK" collectionClass="NSMutableArray" id="o5u-j5-j5O"/>
+                        <outletCollection property="buttons" destination="Zsy-wN-jL1" collectionClass="NSMutableArray" id="AuW-6b-evq"/>
+                        <outletCollection property="buttons" destination="VHT-rd-Ogg" collectionClass="NSMutableArray" id="Xn6-78-MUr"/>
+                        <outletCollection property="buttons" destination="TrB-fK-h8g" collectionClass="NSMutableArray" id="n0D-Yv-TAa"/>
+                        <outletCollection property="buttons" destination="T8u-uM-X5y" collectionClass="NSMutableArray" id="KnM-nW-HmK"/>
+                        <outletCollection property="buttons" destination="jnz-U3-WsK" collectionClass="NSMutableArray" id="wJs-mC-7Ag"/>
+                        <outletCollection property="buttons" destination="ZEX-f2-3mS" collectionClass="NSMutableArray" id="LSl-ed-m1r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

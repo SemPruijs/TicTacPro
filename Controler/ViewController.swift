@@ -18,6 +18,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var hasWonLabel: UILabel!
 
+    @IBOutlet var buttons: [UIButton]!
+    
     func printPlayerHasWon() {
         if playerHasWon() == Player.cross {
             hasWonLabel.text = "X has won!"
@@ -33,16 +35,25 @@ class ViewController: UIViewController {
         let column = sender.tag % 3
         let imageName = whoIs == 0 ? "ring.png" : "cross.png"
         
-        sender.setImage(UIImage(named: imageName), for: UIControl.State.normal)
-        printCircelOrCross(row: row, column: column)
-        renderBoard()
-        nextPlayer()
-        printWinner()
-        printPlayerHasWon()
+        
+        if board[row][column] == nil {
+            sender.setImage(UIImage(named: imageName), for: UIControl.State.normal)
+            printCircelOrCross(row: row, column: column)
+            renderBoard()
+            nextPlayer()
+            printWinner()
+            printPlayerHasWon()
+        }
+        
     }
     
     @IBAction func Reset(_ sender: Any) {
         reset()
+        renderBoard()
+        for button in buttons {
+            print("button: \(button)")
+            button.setImage(UIImage(named: "nothing.png"), for: UIControl.State.normal)
+        }
     }
 }
 
