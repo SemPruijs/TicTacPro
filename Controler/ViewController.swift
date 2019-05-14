@@ -51,8 +51,7 @@ class ViewController: UIViewController {
         reset()
         renderBoard()
         for button in buttons {
-            print("button: \(button)")
-            button.setImage(UIImage(named: "nothing.png"), for: UIControl.State.normal)
+            button.setImage(nil, for: UIControl.State.normal)
         }
     }
 }
