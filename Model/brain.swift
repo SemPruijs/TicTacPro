@@ -23,6 +23,8 @@ var board: Board = [
 ]
 
 var whoIs: Player {
+    // Only 4 Pros: return board.flatMap { $0 }.compactMap { $0 }.count % 2 == 0 ? .ring : .cross
+
     var numberOfMoves = 0
     
     for row in board {
@@ -33,7 +35,7 @@ var whoIs: Player {
         }
     }
     
-    return numberOfMoves % 2 == 0 ? Player.ring : Player.cross
+    return numberOfMoves % 2 == 0 ? .ring : .cross
 }
 
 func render(tile: Tile) -> String {
