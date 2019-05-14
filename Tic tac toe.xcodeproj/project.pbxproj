@@ -12,6 +12,12 @@
 		A2088A842279D53B005FBE97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2088A822279D53B005FBE97 /* Main.storyboard */; };
 		A2088A862279D53D005FBE97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2088A852279D53D005FBE97 /* Assets.xcassets */; };
 		A2088A892279D53D005FBE97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2088A872279D53D005FBE97 /* LaunchScreen.storyboard */; };
+		A2088A9A2279D924005FBE97 /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088A972279D924005FBE97 /* ring.png */; };
+		A2088A9B2279D924005FBE97 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088A982279D924005FBE97 /* cross.png */; };
+		A2088AA02279DA3C005FBE97 /* bord.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088A9F2279DA3C005FBE97 /* bord.png */; };
+		A2088AA7227F2E20005FBE97 /* brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2088AA6227F2E20005FBE97 /* brain.swift */; };
+		A2088AA9227F2FA9005FBE97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */; };
+		A2525130228B0EA700635C89 /* nothing.png in Resources */ = {isa = PBXBuildFile; fileRef = A252512F228B0EA700635C89 /* nothing.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		A2088A852279D53D005FBE97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2088A882279D53D005FBE97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2088A8A2279D53D005FBE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2088A972279D924005FBE97 /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
+		A2088A982279D924005FBE97 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		A2088A9F2279DA3C005FBE97 /* bord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bord.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac toe/bord.png"; sourceTree = "<group>"; };
+		A2088AA6227F2E20005FBE97 /* brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain.swift; sourceTree = "<group>"; };
+		A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A252512F228B0EA700635C89 /* nothing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nothing.png; path = ../../nothing.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,8 +50,16 @@
 		A2088A722279D53B005FBE97 = {
 			isa = PBXGroup;
 			children = (
+				A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */,
 				A2088A7D2279D53B005FBE97 /* Tic tac toe */,
 				A2088A7C2279D53B005FBE97 /* Products */,
+				A2088A8A2279D53D005FBE97 /* Info.plist */,
+				A2088A7E2279D53B005FBE97 /* AppDelegate.swift */,
+				A2088A852279D53D005FBE97 /* Assets.xcassets */,
+				A2088AA52279EEBC005FBE97 /* Model */,
+				A2088AA42279EE7B005FBE97 /* Controler */,
+				A2088AA32279EE4F005FBE97 /* UI */,
+				A2088A962279D5E1005FBE97 /* images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +74,44 @@
 		A2088A7D2279D53B005FBE97 /* Tic tac toe */ = {
 			isa = PBXGroup;
 			children = (
-				A2088A7E2279D53B005FBE97 /* AppDelegate.swift */,
-				A2088A802279D53B005FBE97 /* ViewController.swift */,
-				A2088A822279D53B005FBE97 /* Main.storyboard */,
-				A2088A852279D53D005FBE97 /* Assets.xcassets */,
-				A2088A872279D53D005FBE97 /* LaunchScreen.storyboard */,
-				A2088A8A2279D53D005FBE97 /* Info.plist */,
 			);
 			path = "Tic tac toe";
+			sourceTree = "<group>";
+		};
+		A2088A962279D5E1005FBE97 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A2088A982279D924005FBE97 /* cross.png */,
+				A2088A972279D924005FBE97 /* ring.png */,
+				A2088A9F2279DA3C005FBE97 /* bord.png */,
+				A252512F228B0EA700635C89 /* nothing.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A2088AA32279EE4F005FBE97 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A2088A822279D53B005FBE97 /* Main.storyboard */,
+				A2088A872279D53D005FBE97 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A2088AA42279EE7B005FBE97 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				A2088A802279D53B005FBE97 /* ViewController.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		A2088AA52279EEBC005FBE97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2088AA6227F2E20005FBE97 /* brain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +172,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2088A9B2279D924005FBE97 /* cross.png in Resources */,
 				A2088A892279D53D005FBE97 /* LaunchScreen.storyboard in Resources */,
+				A2088AA02279DA3C005FBE97 /* bord.png in Resources */,
 				A2088A862279D53D005FBE97 /* Assets.xcassets in Resources */,
 				A2088A842279D53B005FBE97 /* Main.storyboard in Resources */,
+				A2525130228B0EA700635C89 /* nothing.png in Resources */,
+				A2088AA9227F2FA9005FBE97 /* Default-568h@2x.png in Resources */,
+				A2088A9A2279D924005FBE97 /* ring.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +192,7 @@
 			files = (
 				A2088A812279D53B005FBE97 /* ViewController.swift in Sources */,
 				A2088A7F2279D53B005FBE97 /* AppDelegate.swift in Sources */,
+				A2088AA7227F2E20005FBE97 /* brain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
