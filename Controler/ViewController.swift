@@ -33,14 +33,12 @@ class ViewController: UIViewController {
     @IBAction func buttons(_ sender: UIButton) {
         let row = sender.tag / 3
         let column = sender.tag % 3
-        let imageName = whoIs == 0 ? "ring.png" : "cross.png"
-        
+        let imageName = whoIs == .ring ? "ring.png" : "cross.png"
         
         if board[row][column] == nil {
             sender.setImage(UIImage(named: imageName), for: UIControl.State.normal)
             printCircelOrCross(row: row, column: column)
             renderBoard()
-            nextPlayer()
             printWinner()
             printPlayerHasWon()
         }

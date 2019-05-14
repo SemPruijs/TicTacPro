@@ -22,14 +22,19 @@ var board: Board = [
     [nil, nil, nil]
 ]
 
-func nextPlayer() {
-    if whoIs == 0 {
-        whoIs = 1
-    } else {
-        whoIs = 0
+var whoIs: Player {
+    var numberOfMoves = 0
+    
+    for row in board {
+        for column in row {
+            if column != nil {
+                numberOfMoves += 1
+            }
+        }
     }
+    
+    return numberOfMoves % 2 == 0 ? Player.ring : Player.cross
 }
-
 
 func render(tile: Tile) -> String {
     if let player = tile {
@@ -56,12 +61,10 @@ func placeAt(row: Int, column: Int, player: Player?) {
     board[row][column] = player
 }
 
-var whoIs = 1 // 0 is cross 1 is circel
-
 func printCircelOrCross(row: Int, column: Int) {
-    if board[row][column] == nil && whoIs == 0 {
+    if board[row][column] == nil && whoIs == .cross {
         placeAt(row: row, column: column, player: .cross)
-    } else if board[row][column] == nil && whoIs == 1 {
+    } else if board[row][column] == nil && whoIs == .ring {
         placeAt(row: row, column: column, player: .ring)
     } else {
     }
