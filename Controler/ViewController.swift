@@ -35,13 +35,16 @@ class ViewController: UIViewController {
         let column = sender.tag % 3
         let imageName = whoIs == .ring ? "ring.png" : "cross.png"
         
-        if board[row][column] == nil {
-            sender.setImage(UIImage(named: imageName), for: UIControl.State.normal)
-            printCircelOrCross(row: row, column: column)
-            renderBoard()
-            printWinner()
-            printPlayerHasWon()
+        if playerHasWon() == nil {
+            if board[row][column] == nil {
+                sender.setImage(UIImage(named: imageName), for: UIControl.State.normal)
+                printCircelOrCross(row: row, column: column)
+                renderBoard()
+                printWinner()
+                printPlayerHasWon()
+            }
         }
+       
         
         if draw() {
             hasWonLabel.text = "it's draw"
