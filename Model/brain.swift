@@ -16,28 +16,35 @@ enum Player {
 typealias Tile = Player?
 typealias Board = [[Tile]]
 
-var board: Board = [
-    [nil, nil, nil],
-    [nil, nil, nil],
-    [nil, nil, nil]
-]
+var board = emptyBoard()
+    
+func emptyBoard() -> Board {
+        return [
+        [nil, nil, nil],
+        [nil, nil, nil],
+        [nil, nil, nil]
+    ]
+}
 
 var whoIs: Player {
-    // Only 4 Pros: return board.flatMap { $0 }.compactMap { $0 }.count % 2 == 0 ? .ring : .cross
+    return moveCount % 2 == 0 ? .ring : .cross
+}
 
-    var numberOfMoves = 0
+var moveCount: Int {
+    // Only 4 Pros: return board.flatMap { $0 }.compactMap { $0 }.count
+
+    var result = 0
     
     for row in board {
         for column in row {
             if column != nil {
-                numberOfMoves += 1
+                result += 1
             }
         }
     }
     
-    return numberOfMoves % 2 == 0 ? .ring : .cross
+    return result
 }
-
 
 func render(tile: Tile) -> String {
     if let player = tile {
@@ -65,42 +72,18 @@ func placeAt(row: Int, column: Int, player: Player?) {
 }
 
 func printCircelOrCross(row: Int, column: Int) {
-    if board[row][column] == nil && whoIs == .cross {
-        placeAt(row: row, column: column, player: .cross)
-    } else if board[row][column] == nil && whoIs == .ring {
-        placeAt(row: row, column: column, player: .ring)
-    } else {
+    if board[row][column] == nil {
+        placeAt(row: row, column: column, player: whoIs)
     }
 }
 
 func reset() {
-    for rowNumber in 0..<board.count {
-        for columnNumber in 0..<board[rowNumber].count {
-            placeAt(row: rowNumber, column: columnNumber, player: nil)
-        }
-    }
+    board = emptyBoard()
 }
-
-
 
 func draw() -> Bool {
-    var numberOfMoves = 0
-    
-    for row in board {
-        for column in row {
-            if column != nil {
-                numberOfMoves += 1
-            }
-        }
-    }
-    if numberOfMoves == 9 && playerHasWon() != Player.ring && playerHasWon() != Player.cross{
-        return true
-    } else {
-        return false
-    }
+    return moveCount == 9 && playerHasWon() == nil
 }
-
-
 
 func playerHasWon() -> Player?{
     for player in [Player.cross, Player.ring] {
