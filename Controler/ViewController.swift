@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        hasWonLabel.text = ""
     }
 
     @IBOutlet weak var hasWonLabel: UILabel!
@@ -43,11 +43,15 @@ class ViewController: UIViewController {
             printPlayerHasWon()
         }
         
+        if draw() {
+            hasWonLabel.text = "it's draw"
+        }
     }
     
     @IBAction func Reset(_ sender: Any) {
         reset()
         renderBoard()
+        hasWonLabel.text = ""
         for button in buttons {
             button.setImage(nil, for: UIControl.State.normal)
         }

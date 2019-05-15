@@ -38,6 +38,7 @@ var whoIs: Player {
     return numberOfMoves % 2 == 0 ? .ring : .cross
 }
 
+
 func render(tile: Tile) -> String {
     if let player = tile {
         switch player {
@@ -82,6 +83,24 @@ func reset() {
 
 
 
+func draw() -> Bool {
+    var numberOfMoves = 0
+    
+    for row in board {
+        for column in row {
+            if column != nil {
+                numberOfMoves += 1
+            }
+        }
+    }
+    if numberOfMoves == 9 {
+        return true
+    } else {
+        return false
+    }
+}
+
+
 
 func playerHasWon() -> Player?{
     for player in [Player.cross, Player.ring] {
@@ -105,23 +124,8 @@ func playerHasWon() -> Player?{
         if board[2][0] == player && board[1][1] == player  && board[0][2] == player {
             return player
         }
+        
     }
-    
-    var picesCount = 0
-    
-    for rowNumber in 0..<board.count {
-        for columnNumber in 0..<board[rowNumber].count {
-            if board[rowNumber][columnNumber] != nil {
-                picesCount += 1
-            }
-        }
-    }
-    
-    if picesCount == 9 {
-        picesCount = 0
-        print("it's draw")
-    }
-    
     return nil
 }
 
