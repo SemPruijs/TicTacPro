@@ -93,7 +93,7 @@ func draw() -> Bool {
             }
         }
     }
-    if numberOfMoves == 9 {
+    if numberOfMoves == 9 && playerHasWon() != Player.ring && playerHasWon() != Player.cross{
         return true
     } else {
         return false
