@@ -87,15 +87,84 @@ func draw() -> Bool {
 
 func playerHasWon() -> Player?{
     for player in [Player.cross, Player.ring] {
+        let numberOfRows = board.count
+        let numberOfColumns = board[0].count
+
+        var combinations: [[Tile]] = []
+        
+        combinations.append(contentsOf: board)
+
+        for columnIndex in 0..<numberOfColumns {
+            var columnTiles: [Tile] = []
+            
+            for rowIndex in 0..<numberOfRows {
+                columnTiles.append(board[rowIndex][columnIndex])
+            }
+            
+            combinations.append(columnTiles)
+        }
+        
+        print(combinations)
+
+//        123
+//        456
+//        789
+        
+//        123
+//        456
+//        789
+//        147
+//        258
+//        369
+
+//        159
+//        357
+
+//        [
+//            [ .cross, nil, .cross],
+//            [ .ring, .ring, nil],
+//            [ .ring, .cross, .cross],
+//            [ .cross, nil, .cross],
+//            [ .cross, nil, .cross],
+//            [ .ring, .ring, nil],
+//            [ .cross, .cross, .cross],
+//            [ .cross, nil, .cross]
+//        ]
+//
+//        [
+//            [ .cross, .cross],
+//            [ .ring, .ring],
+//            [ .ring, .cross, .cross],
+//            [ .cross, .cross],
+//            [ .cross, .cross],
+//            [ .ring, .ring],
+//            [ .cross, .cross, .cross],
+//            [ .cross, .cross]
+//        ]
+//
+//        [
+//            [ .ring, .cross, .cross],
+//            [ .cross, .cross, .cross],
+//        ]
+//
+//        [
+//            [ .ring, .cross],
+//            [ .cross],
+//        ]
+//
+//        [
+//            [ .cross]
+//        ]
+
         //horizantal cross check
-        for rowNumber in 0..<board.count {
-            if board[rowNumber][0] == player && board[rowNumber][1] == player  && board[rowNumber][2] == player {
+        for rowNumber in 0..<numberOfRows {
+            if board[0][rowNumber] == player && board[1][rowNumber] == player  && board[2][rowNumber] == player {
                 return player
             }
         }
         
         //vertical cross check
-        for columnNumber in 0...2 {
+        for columnNumber in 0..<numberOfColumns {
             if board[0][columnNumber] == player && board[1][columnNumber] == player  && board[2][columnNumber] == player {
                 return player
             }
