@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         hasWonLabel.text = ""
+        for button in buttons {
+            button.setImage(nil, for: UIControl.State.normal)
+        }
     }
 
     @IBOutlet weak var hasWonLabel: UILabel!
@@ -50,6 +53,7 @@ class ViewController: UIViewController {
             hasWonLabel.text = "it's draw"
         }
     }
+    
     
     @IBAction func Reset(_ sender: Any) {
         reset()
