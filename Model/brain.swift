@@ -186,15 +186,21 @@ func playerHasWon() -> Player?{
 //
 //
     
-    print("start")
+  
     for winningCombination in winningCombinations {
         let playersOnBoard = winningCombination.map { board[$0][$1] }
+        var didPlayerWon = 0
         
-        for tile in playersOnBoard {
-            for player in [Player.cross, Player.ring] {
-                if tile == player {
-                    
+        for player in [Player.cross, Player.ring] {
+            for cell in playersOnBoard {
+                if cell == player {
+                    didPlayerWon += 1
                 }
+            }
+            if didPlayerWon == numberOfTilesToWin {
+                return player
+            } else {
+                didPlayerWon = 0
             }
         }
         }
