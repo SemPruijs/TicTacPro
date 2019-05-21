@@ -13,6 +13,8 @@ enum Player {
     case cross, ring
 }
 
+let numberOfTilesToWin = 3
+
 typealias Tile = Player?
 typealias Board = [[Tile]]
 
@@ -28,6 +30,82 @@ func emptyBoard() -> Board {
 
 var whoIs: Player {
     return moveCount % 2 == 0 ? .ring : .cross
+}
+
+var numberOfRows: Int { return board.count }
+var numberOfColumns: Int { return board[0].count }
+
+// [
+//   [
+//     (0,0)
+//     (0,1)
+//     (0,2)
+//   ],
+//   [
+//     (0,0)
+//     (1,0)
+//     (2,0)
+//   ],
+// ]
+
+
+var winningCombinations: [[(Int, Int)]] {
+    var result: [[(Int, Int)]] = []
+
+    for rowIndex in 0..<numberOfRows {
+        for columnIndex in 0..<numberOfColumns {
+            // horizontal right
+            if numberOfColumns >= columnIndex + numberOfTilesToWin {
+                var winningCombination: [(Int, Int)] = []
+                
+                for tileIndex in 0..<numberOfTilesToWin {
+                    winningCombination.append((rowIndex, columnIndex + tileIndex))
+                }
+
+                result.append(winningCombination)
+            }
+            
+            // vertical down
+            if numberOfRows >= rowIndex + numberOfTilesToWin {
+                var winningCombination: [(Int, Int)] = []
+                
+                for tileIndex in 0..<numberOfTilesToWin {
+                    winningCombination.append((rowIndex + tileIndex, columnIndex))
+                }
+                
+                result.append(winningCombination)
+            }
+
+            // diagonal right down
+            if numberOfColumns >= columnIndex + numberOfTilesToWin
+                && numberOfRows >= rowIndex + numberOfTilesToWin
+                {
+                var winningCombination: [(Int, Int)] = []
+                
+                for tileIndex in 0..<numberOfTilesToWin {
+                    winningCombination.append((rowIndex + tileIndex, columnIndex + tileIndex))
+                }
+                
+                result.append(winningCombination)
+            }
+
+            // diagonal left down
+            if columnIndex + 1 >= numberOfTilesToWin
+                && numberOfRows >= rowIndex + numberOfTilesToWin
+            {
+                var winningCombination: [(Int, Int)] = []
+                
+                for tileIndex in 0..<numberOfTilesToWin {
+                    winningCombination.append((rowIndex + tileIndex, columnIndex - tileIndex))
+                }
+                
+                result.append(winningCombination)
+            }
+        }
+    }
+    
+    
+    return result
 }
 
 var moveCount: Int {
@@ -86,26 +164,43 @@ func draw() -> Bool {
 }
 
 func playerHasWon() -> Player?{
-    for player in [Player.cross, Player.ring] {
-        let numberOfRows = board.count
-        let numberOfColumns = board[0].count
-
-        var combinations: [[Tile]] = []
+//    for player in [Player.cross, Player.ring] {
+//        let numberOfRows = board.count
+//        let numberOfColumns = board[0].count
+//
+//        var combinations: [[Tile]] = []
+//
+//        combinations.append(contentsOf: board)
+//
+//        for columnIndex in 0..<numberOfColumns {
+//            var columnTiles: [Tile] = []
+//
+//            for rowIndex in 0..<numberOfRows {
+//                columnTiles.append(board[rowIndex][columnIndex])
+//            }
+//
+//            combinations.append(columnTiles)
+//        }
+//
+//        print(combinations)
+//
+//
+    
+    print("start")
+    for winningCombination in winningCombinations {
+        let playersOnBoard = winningCombination.map { board[$0][$1] }
         
-        combinations.append(contentsOf: board)
-
-        for columnIndex in 0..<numberOfColumns {
-            var columnTiles: [Tile] = []
-            
-            for rowIndex in 0..<numberOfRows {
-                columnTiles.append(board[rowIndex][columnIndex])
+        for tile in playersOnBoard {
+            for player in [Player.cross, Player.ring] {
+                if tile == player {
+                    
+                }
             }
-            
-            combinations.append(columnTiles)
         }
-        
-        print(combinations)
-
+        }
+    
+  
+   
 //        123
 //        456
 //        789
@@ -156,28 +251,28 @@ func playerHasWon() -> Player?{
 //            [ .cross]
 //        ]
 
-        //horizantal cross check
-        for rowNumber in 0..<numberOfRows {
-            if board[0][rowNumber] == player && board[1][rowNumber] == player  && board[2][rowNumber] == player {
-                return player
-            }
-        }
-        
-        //vertical cross check
-        for columnNumber in 0..<numberOfColumns {
-            if board[0][columnNumber] == player && board[1][columnNumber] == player  && board[2][columnNumber] == player {
-                return player
-            }
-        }
-        //diaginal cross check
-        if board[0][0] == player && board[1][1] == player  && board[2][2] == player {
-            return player
-        }
-        if board[2][0] == player && board[1][1] == player  && board[0][2] == player {
-            return player
-        }
-        
-    }
+//        //horizantal cross check
+//        for rowNumber in 0..<numberOfRows {
+//            if board[0][rowNumber] == player && board[1][rowNumber] == player  && board[2][rowNumber] == player {
+//                return player
+//            }
+//        }
+//
+//        //vertical cross check
+//        for columnNumber in 0..<numberOfColumns {
+//            if board[0][columnNumber] == player && board[1][columnNumber] == player  && board[2][columnNumber] == player {
+//                return player
+//            }
+//        }
+//        //diaginal cross check
+//        if board[0][0] == player && board[1][1] == player  && board[2][2] == player {
+//            return player
+//        }
+//        if board[2][0] == player && board[1][1] == player  && board[0][2] == player {
+//            return player
+//        }
+//
+//    }
     return nil
 }
 
