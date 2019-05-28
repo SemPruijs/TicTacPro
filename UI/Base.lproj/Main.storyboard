@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CjV-Vy-WpI">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,6 +11,46 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="6vj-4R-pud">
+            <objects>
+                <viewController id="CjV-Vy-WpI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ejs-OM-wp3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled.png" translatesAutoresizingMaskIntoConstraints="NO" id="wb7-Tb-FtT">
+                                <rect key="frame" x="103.66666666666669" y="80" width="207" height="276"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wb7-Tb-FtT" secondAttribute="height" multiplier="3:4" id="EWB-ZT-3Xd"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E70-9u-bKp">
+                                <rect key="frame" x="160.66666666666666" y="664" width="93" height="36"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <state key="normal" title="let's play!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="TmU-L5-J2C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1619408312" green="0.1619408312" blue="0.1619408312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cjy-mQ-wHg" firstAttribute="bottom" secondItem="E70-9u-bKp" secondAttribute="bottom" constant="36" id="7oi-rc-AGd"/>
+                            <constraint firstItem="E70-9u-bKp" firstAttribute="centerX" secondItem="ejs-OM-wp3" secondAttribute="centerX" id="8Ni-Zl-XMz"/>
+                            <constraint firstItem="wb7-Tb-FtT" firstAttribute="width" secondItem="ejs-OM-wp3" secondAttribute="width" multiplier="0.5" id="BEO-JJ-Ray"/>
+                            <constraint firstItem="wb7-Tb-FtT" firstAttribute="top" secondItem="cjy-mQ-wHg" secondAttribute="top" constant="60" id="KOx-oq-b7w"/>
+                            <constraint firstItem="wb7-Tb-FtT" firstAttribute="centerX" secondItem="ejs-OM-wp3" secondAttribute="centerX" id="LxL-sJ-wwv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cjy-mQ-wHg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5I-XT-gxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-112.8" y="-280.20989505247377"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -140,7 +180,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.053279663705583791" green="0.053279663705583791" blue="0.053279663705583791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.16194083121827407" green="0.16194083121827407" blue="0.16194083121827407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WWy-qM-nEU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="0MT-lE-L5V"/>
                             <constraint firstItem="YOj-Ec-bJD" firstAttribute="width" secondItem="aTQ-fM-058" secondAttribute="height" multiplier="1:1" id="7FR-4P-6D0"/>
@@ -177,6 +217,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Untitled.png" width="500" height="666.5"/>
         <image name="bord.png" width="512" height="512"/>
         <image name="cross.png" width="128" height="128"/>
     </resources>

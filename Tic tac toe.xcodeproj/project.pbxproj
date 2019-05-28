@@ -17,6 +17,7 @@
 		A2088AA02279DA3C005FBE97 /* bord.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088A9F2279DA3C005FBE97 /* bord.png */; };
 		A2088AA7227F2E20005FBE97 /* brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2088AA6227F2E20005FBE97 /* brain.swift */; };
 		A2088AA9227F2FA9005FBE97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */; };
+		A2F8A0A0229DC31A00ED1965 /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A09F229DC31A00ED1965 /* Untitled.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A2088A9F2279DA3C005FBE97 /* bord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bord.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac toe/bord.png"; sourceTree = "<group>"; };
 		A2088AA6227F2E20005FBE97 /* brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain.swift; sourceTree = "<group>"; };
 		A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A2F8A09F229DC31A00ED1965 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Untitled.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac toe/Untitled.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				A2088A982279D924005FBE97 /* cross.png */,
 				A2088A972279D924005FBE97 /* ring.png */,
+				A2F8A09F229DC31A00ED1965 /* Untitled.png */,
 				A2088A9F2279DA3C005FBE97 /* bord.png */,
 			);
 			path = images;
@@ -169,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F8A0A0229DC31A00ED1965 /* Untitled.png in Resources */,
 				A2088A9B2279D924005FBE97 /* cross.png in Resources */,
 				A2088A892279D53D005FBE97 /* LaunchScreen.storyboard in Resources */,
 				A2088AA02279DA3C005FBE97 /* bord.png in Resources */,
