@@ -16,6 +16,9 @@
 		A2088A9B2279D924005FBE97 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088A982279D924005FBE97 /* cross.png */; };
 		A2088AA7227F2E20005FBE97 /* brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2088AA6227F2E20005FBE97 /* brain.swift */; };
 		A2088AA9227F2FA9005FBE97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */; };
+		A25C64E422A3EEBF000F83B4 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C64E322A3EEBF000F83B4 /* settings.png */; };
+		A25C64EA22A4008B000F83B4 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C64E922A4008B000F83B4 /* playButton.png */; };
+		A25C64EC22A403A5000F83B4 /* howToPlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C64EB22A403A5000F83B4 /* howToPlayButton.png */; };
 		A2F8A0A4229FFF7000ED1965 /* bord.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0A3229FFF7000ED1965 /* bord.png */; };
 		A2F8A0A6229FFFBE00ED1965 /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0A5229FFFBE00ED1965 /* Untitled.png */; };
 		A2F8A0A922A000D300ED1965 /* Tic tac pro 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0A822A000D300ED1965 /* Tic tac pro 1.m4a */; };
@@ -37,6 +40,9 @@
 		A2088A982279D924005FBE97 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		A2088AA6227F2E20005FBE97 /* brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain.swift; sourceTree = "<group>"; };
 		A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A25C64E322A3EEBF000F83B4 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		A25C64E922A4008B000F83B4 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playButton.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/playButton.png"; sourceTree = "<group>"; };
+		A25C64EB22A403A5000F83B4 /* howToPlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = howToPlayButton.png; sourceTree = "<group>"; };
 		A2F8A0A3229FFF7000ED1965 /* bord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bord.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/bord.png"; sourceTree = "<group>"; };
 		A2F8A0A5229FFFBE00ED1965 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Untitled.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/Untitled.png"; sourceTree = "<group>"; };
 		A2F8A0A822A000D300ED1965 /* Tic tac pro 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tic tac pro 1.m4a"; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/Tic tac pro 1.m4a"; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 				A2F8A0AE22A1A46400ED1965 /* home.png */,
 				A2F8A0B222A1A4B700ED1965 /* music 2.png */,
 				A2F8A0B022A1A46D00ED1965 /* settings.png */,
+				A25C64EB22A403A5000F83B4 /* howToPlayButton.png */,
+				A25C64E922A4008B000F83B4 /* playButton.png */,
+				A25C64E322A3EEBF000F83B4 /* settings.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -200,13 +209,16 @@
 				A2088A9B2279D924005FBE97 /* cross.png in Resources */,
 				A2F8A0AF22A1A46400ED1965 /* home.png in Resources */,
 				A2F8A0A4229FFF7000ED1965 /* bord.png in Resources */,
+				A25C64E422A3EEBF000F83B4 /* settings.png in Resources */,
 				A2F8A0B322A1A4B800ED1965 /* music 2.png in Resources */,
 				A2088A892279D53D005FBE97 /* LaunchScreen.storyboard in Resources */,
 				A2088A862279D53D005FBE97 /* Assets.xcassets in Resources */,
+				A25C64EC22A403A5000F83B4 /* howToPlayButton.png in Resources */,
 				A2F8A0A922A000D300ED1965 /* Tic tac pro 1.m4a in Resources */,
 				A2F8A0AB22A000E000ED1965 /* Tic tac pro 2.m4a in Resources */,
 				A2088A842279D53B005FBE97 /* Main.storyboard in Resources */,
 				A2088AA9227F2FA9005FBE97 /* Default-568h@2x.png in Resources */,
+				A25C64EA22A4008B000F83B4 /* playButton.png in Resources */,
 				A2088A9A2279D924005FBE97 /* ring.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
