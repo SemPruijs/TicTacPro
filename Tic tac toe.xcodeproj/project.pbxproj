@@ -14,10 +14,15 @@
 		A2088A892279D53D005FBE97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2088A872279D53D005FBE97 /* LaunchScreen.storyboard */; };
 		A2088A9A2279D924005FBE97 /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088A972279D924005FBE97 /* ring.png */; };
 		A2088A9B2279D924005FBE97 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088A982279D924005FBE97 /* cross.png */; };
-		A2088AA02279DA3C005FBE97 /* bord.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088A9F2279DA3C005FBE97 /* bord.png */; };
 		A2088AA7227F2E20005FBE97 /* brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2088AA6227F2E20005FBE97 /* brain.swift */; };
 		A2088AA9227F2FA9005FBE97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */; };
-		A2F8A0A0229DC31A00ED1965 /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A09F229DC31A00ED1965 /* Untitled.png */; };
+		A2F8A0A4229FFF7000ED1965 /* bord.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0A3229FFF7000ED1965 /* bord.png */; };
+		A2F8A0A6229FFFBE00ED1965 /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0A5229FFFBE00ED1965 /* Untitled.png */; };
+		A2F8A0A922A000D300ED1965 /* Tic tac pro 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0A822A000D300ED1965 /* Tic tac pro 1.m4a */; };
+		A2F8A0AB22A000E000ED1965 /* Tic tac pro 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0AA22A000E000ED1965 /* Tic tac pro 2.m4a */; };
+		A2F8A0AF22A1A46400ED1965 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0AE22A1A46400ED1965 /* home.png */; };
+		A2F8A0B122A1A46D00ED1965 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0B022A1A46D00ED1965 /* settings.png */; };
+		A2F8A0B322A1A4B800ED1965 /* music 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0B222A1A4B700ED1965 /* music 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +35,15 @@
 		A2088A8A2279D53D005FBE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2088A972279D924005FBE97 /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
 		A2088A982279D924005FBE97 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
-		A2088A9F2279DA3C005FBE97 /* bord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bord.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac toe/bord.png"; sourceTree = "<group>"; };
 		A2088AA6227F2E20005FBE97 /* brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain.swift; sourceTree = "<group>"; };
 		A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		A2F8A09F229DC31A00ED1965 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Untitled.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac toe/Untitled.png"; sourceTree = "<group>"; };
+		A2F8A0A3229FFF7000ED1965 /* bord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bord.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/bord.png"; sourceTree = "<group>"; };
+		A2F8A0A5229FFFBE00ED1965 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Untitled.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/Untitled.png"; sourceTree = "<group>"; };
+		A2F8A0A822A000D300ED1965 /* Tic tac pro 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tic tac pro 1.m4a"; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/Tic tac pro 1.m4a"; sourceTree = "<group>"; };
+		A2F8A0AA22A000E000ED1965 /* Tic tac pro 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tic tac pro 2.m4a"; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/Tic tac pro 2.m4a"; sourceTree = "<group>"; };
+		A2F8A0AE22A1A46400ED1965 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/home.png"; sourceTree = "<group>"; };
+		A2F8A0B022A1A46D00ED1965 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/settings.png"; sourceTree = "<group>"; };
+		A2F8A0B222A1A4B700ED1965 /* music 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "music 2.png"; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/music 2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,7 @@
 				A2088AA52279EEBC005FBE97 /* Model */,
 				A2088AA42279EE7B005FBE97 /* Controler */,
 				A2088AA32279EE4F005FBE97 /* UI */,
+				A2F8A0A722A000B000ED1965 /* music */,
 				A2088A962279D5E1005FBE97 /* images */,
 			);
 			sourceTree = "<group>";
@@ -83,8 +94,11 @@
 			children = (
 				A2088A982279D924005FBE97 /* cross.png */,
 				A2088A972279D924005FBE97 /* ring.png */,
-				A2F8A09F229DC31A00ED1965 /* Untitled.png */,
-				A2088A9F2279DA3C005FBE97 /* bord.png */,
+				A2F8A0A3229FFF7000ED1965 /* bord.png */,
+				A2F8A0A5229FFFBE00ED1965 /* Untitled.png */,
+				A2F8A0AE22A1A46400ED1965 /* home.png */,
+				A2F8A0B222A1A4B700ED1965 /* music 2.png */,
+				A2F8A0B022A1A46D00ED1965 /* settings.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -112,6 +126,15 @@
 				A2088AA6227F2E20005FBE97 /* brain.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A2F8A0A722A000B000ED1965 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				A2F8A0A822A000D300ED1965 /* Tic tac pro 1.m4a */,
+				A2F8A0AA22A000E000ED1965 /* Tic tac pro 2.m4a */,
+			);
+			path = music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,11 +195,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2F8A0A0229DC31A00ED1965 /* Untitled.png in Resources */,
+				A2F8A0B122A1A46D00ED1965 /* settings.png in Resources */,
+				A2F8A0A6229FFFBE00ED1965 /* Untitled.png in Resources */,
 				A2088A9B2279D924005FBE97 /* cross.png in Resources */,
+				A2F8A0AF22A1A46400ED1965 /* home.png in Resources */,
+				A2F8A0A4229FFF7000ED1965 /* bord.png in Resources */,
+				A2F8A0B322A1A4B800ED1965 /* music 2.png in Resources */,
 				A2088A892279D53D005FBE97 /* LaunchScreen.storyboard in Resources */,
-				A2088AA02279DA3C005FBE97 /* bord.png in Resources */,
 				A2088A862279D53D005FBE97 /* Assets.xcassets in Resources */,
+				A2F8A0A922A000D300ED1965 /* Tic tac pro 1.m4a in Resources */,
+				A2F8A0AB22A000E000ED1965 /* Tic tac pro 2.m4a in Resources */,
 				A2088A842279D53B005FBE97 /* Main.storyboard in Resources */,
 				A2088AA9227F2FA9005FBE97 /* Default-568h@2x.png in Resources */,
 				A2088A9A2279D924005FBE97 /* ring.png in Resources */,

@@ -8,6 +8,15 @@
 
 import Foundation
 
+extension Array {
+    func randomItem() -> Element? {
+        if isEmpty { return nil }
+        let index = Int(arc4random_uniform(UInt32(self.count)))
+        return self[index]
+    }
+}
+
+var songs = ["Tic tac pro 1", "Tic tac pro 2"]
 
 enum Player {
     case cross, ring

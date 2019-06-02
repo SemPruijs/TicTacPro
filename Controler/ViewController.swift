@@ -7,21 +7,37 @@
 //
 
 import UIKit
+import AVFoundation
+
+
 
 class ViewController: UIViewController {
 
+    var song = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         hasWonLabel.text = ""
         for button in buttons {
             button.setImage(nil, for: UIControl.State.normal)
         }
+        
+        do {
+            song = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: songs.randomItem(), ofType: "m4a")!))
+            song.prepareToPlay()
+        } catch {
+            print(error)
+        }
     }
 
+    
+    
+    
     @IBOutlet weak var hasWonLabel: UILabel!
 
     @IBOutlet var buttons: [UIButton]!
+    
+    
     
     func printPlayerHasWon() {
         if playerHasWon() == Player.cross {
@@ -54,7 +70,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
     @IBAction func Reset(_ sender: Any) {
         reset()
         renderBoard()
@@ -63,6 +78,19 @@ class ViewController: UIViewController {
             button.setImage(nil, for: UIControl.State.normal)
         }
     }
+    
+    @IBAction func musicButton(_ sender: Any) {
+        song.play()
+    }
+    
+    @IBAction func homeButton(_ sender: Any) {
+        song.stop()
+    }
+    
+   
+    
 }
+
+
 
 
