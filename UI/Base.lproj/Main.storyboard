@@ -19,8 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akV-F1-cWR">
-                                <rect key="frame" x="119.5" y="34" width="136.5" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akV-F1-cWR">
+                                <rect key="frame" x="119.5" y="35" width="136.5" height="39.5"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -29,6 +29,7 @@
                         <color key="backgroundColor" red="0.16282719373703003" green="0.16298320889472961" blue="0.16285133361816406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="akV-F1-cWR" firstAttribute="centerX" secondItem="u6d-1u-R1y" secondAttribute="centerX" id="05Y-0W-YjH"/>
+                            <constraint firstItem="akV-F1-cWR" firstAttribute="top" secondItem="VUc-t0-P5m" secondAttribute="top" constant="15" id="Lqr-8M-QKr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUc-t0-P5m"/>
                     </view>
@@ -87,7 +88,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" id="Rw0-BV-Lxk"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="Rw0-BV-Lxk"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -248,7 +249,7 @@
                                 <state key="normal" image="home.png"/>
                                 <connections>
                                     <action selector="homeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Acj-y3-L50"/>
-                                    <segue destination="CjV-Vy-WpI" kind="presentation" id="dcs-ws-vtA"/>
+                                    <segue destination="CjV-Vy-WpI" kind="presentation" modalTransitionStyle="crossDissolve" id="dcs-ws-vtA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vl4-7e-Z8w">

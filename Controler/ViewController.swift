@@ -10,10 +10,11 @@ import UIKit
 import AVFoundation
 
 
-
 class ViewController: UIViewController {
 
     var song = AVAudioPlayer()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,14 +24,13 @@ class ViewController: UIViewController {
         }
         
         do {
-            song = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: songs.randomItem(), ofType: "m4a")!))
+        song = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Tic tac pro 2", ofType: "m4a")!))
             song.prepareToPlay()
         } catch {
             print(error)
         }
     }
 
-    
     
     
     @IBOutlet weak var hasWonLabel: UILabel!
@@ -85,10 +85,8 @@ class ViewController: UIViewController {
     
     @IBAction func homeButton(_ sender: Any) {
         song.stop()
+        reset()
     }
-    
-   
-    
 }
 
 

@@ -7,6 +7,9 @@
 //
 
 import Foundation
+import AVFoundation
+
+
 
 extension Array {
     func randomItem() -> Element? {
@@ -17,6 +20,8 @@ extension Array {
 }
 
 var songs = ["Tic tac pro 1", "Tic tac pro 2"]
+
+ var song = AVAudioPlayer()
 
 enum Player {
     case cross, ring
