@@ -22,9 +22,8 @@ class ViewController: UIViewController {
         for button in buttons {
             button.setImage(nil, for: UIControl.State.normal)
         }
-        
         do {
-        song = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Tic tac pro 2", ofType: "m4a")!))
+        song = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: songs.randomItem() , ofType: "m4a")!))
             song.prepareToPlay()
         } catch {
             print(error)

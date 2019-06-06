@@ -16,6 +16,16 @@
 		A2088A9B2279D924005FBE97 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088A982279D924005FBE97 /* cross.png */; };
 		A2088AA7227F2E20005FBE97 /* brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2088AA6227F2E20005FBE97 /* brain.swift */; };
 		A2088AA9227F2FA9005FBE97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */; };
+		A212105422A794340037D644 /* 3button.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C651C22A6E5AF000F83B4 /* 3button.png */; };
+		A212105522A794340037D644 /* 4button.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C651722A6E5AF000F83B4 /* 4button.png */; };
+		A212105622A794340037D644 /* 5button.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C651622A6E5AE000F83B4 /* 5button.png */; };
+		A212105722A794340037D644 /* 6button.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C651B22A6E5AF000F83B4 /* 6button.png */; };
+		A212105822A794340037D644 /* 7button.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C651922A6E5AF000F83B4 /* 7button.png */; };
+		A212105922A794340037D644 /* 8button.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C651522A6E5AE000F83B4 /* 8button.png */; };
+		A212105A22A794340037D644 /* 9button.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C651822A6E5AF000F83B4 /* 9button.png */; };
+		A212105B22A794340037D644 /* 10button.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C651A22A6E5AF000F83B4 /* 10button.png */; };
+		A212105C22A794340037D644 /* 11button.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C651D22A6E5AF000F83B4 /* 11button.png */; };
+		A2270D0D22A9B6210055AEC1 /* bordFour.png in Resources */ = {isa = PBXBuildFile; fileRef = A2270D0C22A9B6210055AEC1 /* bordFour.png */; };
 		A25C64E422A3EEBF000F83B4 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C64E322A3EEBF000F83B4 /* settings.png */; };
 		A25C64EA22A4008B000F83B4 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C64E922A4008B000F83B4 /* playButton.png */; };
 		A25C64EC22A403A5000F83B4 /* howToPlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C64EB22A403A5000F83B4 /* howToPlayButton.png */; };
@@ -40,9 +50,19 @@
 		A2088A982279D924005FBE97 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		A2088AA6227F2E20005FBE97 /* brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain.swift; sourceTree = "<group>"; };
 		A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A2270D0C22A9B6210055AEC1 /* bordFour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bordFour.png; sourceTree = "<group>"; };
 		A25C64E322A3EEBF000F83B4 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		A25C64E922A4008B000F83B4 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playButton.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/playButton.png"; sourceTree = "<group>"; };
 		A25C64EB22A403A5000F83B4 /* howToPlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = howToPlayButton.png; sourceTree = "<group>"; };
+		A25C651522A6E5AE000F83B4 /* 8button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8button.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/numberButtons/8button.png"; sourceTree = "<group>"; };
+		A25C651622A6E5AE000F83B4 /* 5button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5button.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/numberButtons/5button.png"; sourceTree = "<group>"; };
+		A25C651722A6E5AF000F83B4 /* 4button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4button.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/numberButtons/4button.png"; sourceTree = "<group>"; };
+		A25C651822A6E5AF000F83B4 /* 9button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 9button.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/numberButtons/9button.png"; sourceTree = "<group>"; };
+		A25C651922A6E5AF000F83B4 /* 7button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 7button.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/numberButtons/7button.png"; sourceTree = "<group>"; };
+		A25C651A22A6E5AF000F83B4 /* 10button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 10button.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/numberButtons/10button.png"; sourceTree = "<group>"; };
+		A25C651B22A6E5AF000F83B4 /* 6button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 6button.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/numberButtons/6button.png"; sourceTree = "<group>"; };
+		A25C651C22A6E5AF000F83B4 /* 3button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3button.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/numberButtons/3button.png"; sourceTree = "<group>"; };
+		A25C651D22A6E5AF000F83B4 /* 11button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 11button.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/numberButtons/11button.png"; sourceTree = "<group>"; };
 		A2F8A0A3229FFF7000ED1965 /* bord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bord.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/bord.png"; sourceTree = "<group>"; };
 		A2F8A0A5229FFFBE00ED1965 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Untitled.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/Untitled.png"; sourceTree = "<group>"; };
 		A2F8A0A822A000D300ED1965 /* Tic tac pro 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tic tac pro 1.m4a"; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/Tic tac pro 1.m4a"; sourceTree = "<group>"; };
@@ -105,6 +125,16 @@
 				A2F8A0AE22A1A46400ED1965 /* home.png */,
 				A2F8A0B222A1A4B700ED1965 /* music 2.png */,
 				A2F8A0B022A1A46D00ED1965 /* settings.png */,
+				A2270D0C22A9B6210055AEC1 /* bordFour.png */,
+				A25C651C22A6E5AF000F83B4 /* 3button.png */,
+				A25C651722A6E5AF000F83B4 /* 4button.png */,
+				A25C651622A6E5AE000F83B4 /* 5button.png */,
+				A25C651B22A6E5AF000F83B4 /* 6button.png */,
+				A25C651922A6E5AF000F83B4 /* 7button.png */,
+				A25C651522A6E5AE000F83B4 /* 8button.png */,
+				A25C651822A6E5AF000F83B4 /* 9button.png */,
+				A25C651A22A6E5AF000F83B4 /* 10button.png */,
+				A25C651D22A6E5AF000F83B4 /* 11button.png */,
 				A25C64EB22A403A5000F83B4 /* howToPlayButton.png */,
 				A25C64E922A4008B000F83B4 /* playButton.png */,
 				A25C64E322A3EEBF000F83B4 /* settings.png */,
@@ -204,11 +234,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2270D0D22A9B6210055AEC1 /* bordFour.png in Resources */,
+				A212105722A794340037D644 /* 6button.png in Resources */,
+				A212105622A794340037D644 /* 5button.png in Resources */,
 				A2F8A0B122A1A46D00ED1965 /* settings.png in Resources */,
 				A2F8A0A6229FFFBE00ED1965 /* Untitled.png in Resources */,
+				A212105C22A794340037D644 /* 11button.png in Resources */,
+				A212105422A794340037D644 /* 3button.png in Resources */,
+				A212105A22A794340037D644 /* 9button.png in Resources */,
 				A2088A9B2279D924005FBE97 /* cross.png in Resources */,
 				A2F8A0AF22A1A46400ED1965 /* home.png in Resources */,
+				A212105822A794340037D644 /* 7button.png in Resources */,
 				A2F8A0A4229FFF7000ED1965 /* bord.png in Resources */,
+				A212105522A794340037D644 /* 4button.png in Resources */,
 				A25C64E422A3EEBF000F83B4 /* settings.png in Resources */,
 				A2F8A0B322A1A4B800ED1965 /* music 2.png in Resources */,
 				A2088A892279D53D005FBE97 /* LaunchScreen.storyboard in Resources */,
@@ -217,6 +255,8 @@
 				A2F8A0A922A000D300ED1965 /* Tic tac pro 1.m4a in Resources */,
 				A2F8A0AB22A000E000ED1965 /* Tic tac pro 2.m4a in Resources */,
 				A2088A842279D53B005FBE97 /* Main.storyboard in Resources */,
+				A212105922A794340037D644 /* 8button.png in Resources */,
+				A212105B22A794340037D644 /* 10button.png in Resources */,
 				A2088AA9227F2FA9005FBE97 /* Default-568h@2x.png in Resources */,
 				A25C64EA22A4008B000F83B4 /* playButton.png in Resources */,
 				A2088A9A2279D924005FBE97 /* ring.png in Resources */,
