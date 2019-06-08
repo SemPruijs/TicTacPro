@@ -26,6 +26,7 @@
 		A212105B22A794340037D644 /* 10button.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C651A22A6E5AF000F83B4 /* 10button.png */; };
 		A212105C22A794340037D644 /* 11button.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C651D22A6E5AF000F83B4 /* 11button.png */; };
 		A2270D0D22A9B6210055AEC1 /* bordFour.png in Resources */ = {isa = PBXBuildFile; fileRef = A2270D0C22A9B6210055AEC1 /* bordFour.png */; };
+		A2270D0F22AA46900055AEC1 /* FourByFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2270D0E22AA46900055AEC1 /* FourByFourViewController.swift */; };
 		A25C64E422A3EEBF000F83B4 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C64E322A3EEBF000F83B4 /* settings.png */; };
 		A25C64EA22A4008B000F83B4 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C64E922A4008B000F83B4 /* playButton.png */; };
 		A25C64EC22A403A5000F83B4 /* howToPlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C64EB22A403A5000F83B4 /* howToPlayButton.png */; };
@@ -51,6 +52,7 @@
 		A2088AA6227F2E20005FBE97 /* brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain.swift; sourceTree = "<group>"; };
 		A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A2270D0C22A9B6210055AEC1 /* bordFour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bordFour.png; sourceTree = "<group>"; };
+		A2270D0E22AA46900055AEC1 /* FourByFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourByFourViewController.swift; sourceTree = "<group>"; };
 		A25C64E322A3EEBF000F83B4 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		A25C64E922A4008B000F83B4 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playButton.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/playButton.png"; sourceTree = "<group>"; };
 		A25C64EB22A403A5000F83B4 /* howToPlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = howToPlayButton.png; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				A2088A802279D53B005FBE97 /* ViewController.swift */,
+				A2270D0E22AA46900055AEC1 /* FourByFourViewController.swift */,
 			);
 			path = Controler;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				A2088A812279D53B005FBE97 /* ViewController.swift in Sources */,
 				A2088A7F2279D53B005FBE97 /* AppDelegate.swift in Sources */,
 				A2088AA7227F2E20005FBE97 /* brain.swift in Sources */,
+				A2270D0F22AA46900055AEC1 /* FourByFourViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

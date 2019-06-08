@@ -32,6 +32,9 @@ class ViewController: UIViewController {
 
     
     
+    
+    
+    
     @IBOutlet weak var hasWonLabel: UILabel!
 
     @IBOutlet var buttons: [UIButton]!
@@ -78,9 +81,14 @@ class ViewController: UIViewController {
         }
     }
     
+    
     @IBAction func musicButton(_ sender: Any) {
         song.play()
     }
+    
+   
+    
+   
     
     @IBAction func homeButton(_ sender: Any) {
         song.stop()
