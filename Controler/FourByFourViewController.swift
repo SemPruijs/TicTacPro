@@ -17,6 +17,9 @@ class FourByFourViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        for button in buttons {
+            button.setImage(nil, for: UIControl.State.normal)
+        }
         do {
             song = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: songs.randomItem() , ofType: "m4a")!))
             song.prepareToPlay()
@@ -31,6 +34,18 @@ class FourByFourViewController: UIViewController {
     @IBAction func home(_ sender: Any) {
         song.stop()
     }
+    
+    @IBOutlet var buttons: [UIButton]!
+    
+    @IBAction func buttons(_ sender: UIButton) {
+        let imageName = whoIs == .ring ? "ring.png" : "cross.png"
+
+            sender.setImage(UIImage(named: imageName), for: UIControl.State.normal)
+    }
+    
+    
+    
+    
     
     /*
     // MARK: - Navigation
