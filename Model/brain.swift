@@ -32,13 +32,22 @@ let numberOfTilesToWin = 3
 typealias Tile = Player?
 typealias Board = [[Tile]]
 
-var board = emptyBoard()
+var board = emptyBoardThree()
     
-func emptyBoard() -> Board {
+func emptyBoardThree() -> Board {
         return [
         [nil, nil, nil],
         [nil, nil, nil],
         [nil, nil, nil]
+    ]
+}
+
+func emtyBoardFour() -> Board {
+    return [
+        [nil, nil, nil, nil],
+        [nil, nil, nil, nil],
+        [nil, nil, nil, nil],
+        [nil, nil, nil, nil]
     ]
 }
 
@@ -169,9 +178,7 @@ func printCircelOrCross(row: Int, column: Int) {
     }
 }
 
-func reset() {
-    board = emptyBoard()
-}
+
 
 func draw() -> Bool {
     return moveCount == 9 && playerHasWon() == nil

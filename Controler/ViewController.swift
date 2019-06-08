@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        board = emptyBoardThree()
         hasWonLabel.text = ""
         for button in buttons {
             button.setImage(nil, for: UIControl.State.normal)
@@ -73,7 +74,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Reset(_ sender: Any) {
-        reset()
+        board = emptyBoardThree()
         renderBoard()
         hasWonLabel.text = ""
         for button in buttons {
@@ -92,7 +93,7 @@ class ViewController: UIViewController {
     
     @IBAction func homeButton(_ sender: Any) {
         song.stop()
-        reset()
+        board = emptyBoardThree()
     }
 }
 

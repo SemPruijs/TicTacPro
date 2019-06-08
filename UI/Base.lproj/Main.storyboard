@@ -495,6 +495,23 @@
                                     <constraint firstAttribute="width" secondItem="7xd-sq-vIV" secondAttribute="height" multiplier="1:1" id="efA-fo-qgP"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-Fh-8wx">
+                                <rect key="frame" x="168.66666666666666" y="791" width="77" height="51"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <state key="normal" title="reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="Ky7-V0-1R2" eventType="touchUpInside" id="TFk-z3-ASH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgj-je-bJM" userLabel="hasWonLabel">
+                                <rect key="frame" x="0.0" y="38" width="414" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.16282719373703003" green="0.16298320889472961" blue="0.16285133361816406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -503,8 +520,10 @@
                             <constraint firstItem="7xd-sq-vIV" firstAttribute="width" secondItem="1N4-Zh-hhI" secondAttribute="width" multiplier="0.9" id="Ay7-vt-gYY"/>
                             <constraint firstItem="HEz-oQ-AjC" firstAttribute="leading" secondItem="kRI-kc-YH4" secondAttribute="leading" constant="20" id="Eqm-BJ-6J8"/>
                             <constraint firstItem="HV1-Mz-PaE" firstAttribute="width" secondItem="1N4-Zh-hhI" secondAttribute="width" multiplier="0.9" id="Fox-nP-zW2"/>
+                            <constraint firstItem="kRI-kc-YH4" firstAttribute="bottom" secondItem="cEh-Fh-8wx" secondAttribute="bottom" constant="20" id="NgH-d5-wt6"/>
                             <constraint firstItem="HEz-oQ-AjC" firstAttribute="top" secondItem="kRI-kc-YH4" secondAttribute="top" id="Xpj-cM-kLm"/>
                             <constraint firstItem="HV1-Mz-PaE" firstAttribute="centerX" secondItem="1N4-Zh-hhI" secondAttribute="centerX" id="YiU-8o-Ibg"/>
+                            <constraint firstItem="cEh-Fh-8wx" firstAttribute="centerX" secondItem="1N4-Zh-hhI" secondAttribute="centerX" id="Zjl-4w-oFa"/>
                             <constraint firstItem="7xd-sq-vIV" firstAttribute="centerX" secondItem="1N4-Zh-hhI" secondAttribute="centerX" id="gU4-Cq-lJd"/>
                             <constraint firstItem="7xd-sq-vIV" firstAttribute="centerY" secondItem="1N4-Zh-hhI" secondAttribute="centerY" id="gXr-7k-muF"/>
                             <constraint firstItem="HV1-Mz-PaE" firstAttribute="centerY" secondItem="1N4-Zh-hhI" secondAttribute="centerY" id="nRR-jY-ZwZ"/>
@@ -512,6 +531,7 @@
                         <viewLayoutGuide key="safeArea" id="kRI-kc-YH4"/>
                     </view>
                     <connections>
+                        <outlet property="hasWonLabel" destination="bgj-je-bJM" id="wgo-EG-lgC"/>
                         <outletCollection property="buttons" destination="nVf-W1-Bae" collectionClass="NSMutableArray" id="3Qc-39-0UT"/>
                         <outletCollection property="buttons" destination="ive-ka-v2F" collectionClass="NSMutableArray" id="hG9-GI-2gW"/>
                         <outletCollection property="buttons" destination="eZC-Hl-8I4" collectionClass="NSMutableArray" id="wY8-rv-Mkx"/>
@@ -532,7 +552,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jqy-vL-EcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="429.53523238380814"/>
+            <point key="canvasLocation" x="827.536231884058" y="429.24107142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

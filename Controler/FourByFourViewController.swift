@@ -13,10 +13,11 @@ class FourByFourViewController: UIViewController {
 
     
      var song = AVAudioPlayer()
-    
+    @IBOutlet weak var hasWonLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        board = emtyBoardFour()
         for button in buttons {
             button.setImage(nil, for: UIControl.State.normal)
         }
@@ -28,33 +29,56 @@ class FourByFourViewController: UIViewController {
         }
     }
     
+    func printPlayerHasWon() {
+        if playerHasWon() == Player.cross {
+            hasWonLabel.text = "X has won!"
+        } else if playerHasWon() == Player.ring {
+            hasWonLabel.text = "O has won!"
+        } else {
+            hasWonLabel.text = ""
+        }
+    }
+    
     @IBAction func music(_ sender: Any) {
         song.play()
     }
     @IBAction func home(_ sender: Any) {
         song.stop()
+        board = emtyBoardFour()
     }
     
     @IBOutlet var buttons: [UIButton]!
     
     @IBAction func buttons(_ sender: UIButton) {
         let imageName = whoIs == .ring ? "ring.png" : "cross.png"
-
-            sender.setImage(UIImage(named: imageName), for: UIControl.State.normal)
+        let row = sender.tag / 4
+        let column = sender.tag % 4
+        
+        if playerHasWon() == nil {
+            if board[row][column] == nil {
+                sender.setImage(UIImage(named: imageName), for: UIControl.State.normal)
+                printCircelOrCross(row: row, column: column)
+                renderBoard()
+                printWinner()
+                printPlayerHasWon()
+            }
+        }
+        
+        
+        if draw() {
+            
+        }
+    }
+    
+    @IBAction func reset(_ sender: Any) {
+        board = emptyBoardThree()
+        renderBoard()
+        hasWonLabel.text = ""
+        for button in buttons {
+            button.setImage(nil, for: UIControl.State.normal)
+        }
     }
     
     
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
