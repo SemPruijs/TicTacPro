@@ -71,7 +71,7 @@ class FourByFourViewController: UIViewController {
     }
     
     @IBAction func reset(_ sender: Any) {
-        board = emptyBoardThree()
+        board = emtyBoardFour()
         renderBoard()
         hasWonLabel.text = ""
         for button in buttons {
