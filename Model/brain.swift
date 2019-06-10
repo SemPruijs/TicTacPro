@@ -19,7 +19,7 @@ extension Array {
     }
 }
 
-var songs = ["Tic tac pro 1", "Tic tac pro 2"]
+var songs = ["Tic tac pro 1", "Tic tac pro 2", "Tic tac pro 3"]
 
  var song = AVAudioPlayer()
 
