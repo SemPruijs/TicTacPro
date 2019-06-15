@@ -29,7 +29,22 @@
 		A25C64E422A3EEBF000F83B4 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C64E322A3EEBF000F83B4 /* settings.png */; };
 		A25C64EA22A4008B000F83B4 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C64E922A4008B000F83B4 /* playButton.png */; };
 		A25C64EC22A403A5000F83B4 /* howToPlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A25C64EB22A403A5000F83B4 /* howToPlayButton.png */; };
-		A2A5DDDB22AEE13300FDF5ED /* Tic tac pro 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A2A5DDDA22AEE0CB00FDF5ED /* Tic tac pro 3.m4a */; };
+		A2A5DDE322AF793D00FDF5ED /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A5DDE222AF793D00FDF5ED /* Messages.framework */; };
+		A2A5DDEF22AF793F00FDF5ED /* Tic tac multiplayer.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A2A5DDE022AF793D00FDF5ED /* Tic tac multiplayer.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A2A5DDF422AF7AA200FDF5ED /* Tic tac pro 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A2A5DDDA22AEE0CB00FDF5ED /* Tic tac pro 3.m4a */; };
+		A2A5DDF522AF7C0200FDF5ED /* bord.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0A3229FFF7000ED1965 /* bord.png */; };
+		A2A5DDF622AF7DF600FDF5ED /* Tic tac pro 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0A822A000D300ED1965 /* Tic tac pro 1.m4a */; };
+		A2A5DDF722AF7DF900FDF5ED /* Tic tac pro 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0AA22A000E000ED1965 /* Tic tac pro 2.m4a */; };
+		A2A5DDF822AF7DFC00FDF5ED /* Tic tac pro 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A2A5DDDA22AEE0CB00FDF5ED /* Tic tac pro 3.m4a */; };
+		A2A5DDF922B006B000FDF5ED /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088A982279D924005FBE97 /* cross.png */; };
+		A2A5DDFA22B006B400FDF5ED /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = A2088A972279D924005FBE97 /* ring.png */; };
+		A2A5DDFB22B0292800FDF5ED /* brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2088AA6227F2E20005FBE97 /* brain.swift */; };
+		A2A5DDFC22B02D6900FDF5ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2088A802279D53B005FBE97 /* ViewController.swift */; };
+		A2A5DDFD22B02DB200FDF5ED /* FourByFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2270D0E22AA46900055AEC1 /* FourByFourViewController.swift */; };
+		A2A5DDFE22B175E500FDF5ED /* bordFour.png in Resources */ = {isa = PBXBuildFile; fileRef = A2BBAFE722ABEDD800726846 /* bordFour.png */; };
+		A2A5DDFF22B175EA00FDF5ED /* bordFive.png in Resources */ = {isa = PBXBuildFile; fileRef = A2BBAFED22AD102600726846 /* bordFive.png */; };
+		A2A5DE0022B175ED00FDF5ED /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0A5229FFFBE00ED1965 /* Untitled.png */; };
+		A2A5DE0122B175F000FDF5ED /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0AE22A1A46400ED1965 /* home.png */; };
 		A2BBAFE822ABEDD800726846 /* bordFour.png in Resources */ = {isa = PBXBuildFile; fileRef = A2BBAFE722ABEDD800726846 /* bordFour.png */; };
 		A2BBAFEE22AD102600726846 /* bordFive.png in Resources */ = {isa = PBXBuildFile; fileRef = A2BBAFED22AD102600726846 /* bordFive.png */; };
 		A2F8A0A4229FFF7000ED1965 /* bord.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0A3229FFF7000ED1965 /* bord.png */; };
@@ -40,6 +55,30 @@
 		A2F8A0B122A1A46D00ED1965 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0B022A1A46D00ED1965 /* settings.png */; };
 		A2F8A0B322A1A4B800ED1965 /* music 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0B222A1A4B700ED1965 /* music 2.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2A5DDED22AF793F00FDF5ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2088A732279D53B005FBE97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2A5DDDF22AF793D00FDF5ED;
+			remoteInfo = "Tic tac multiplayer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A2A5DDF322AF793F00FDF5ED /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A2A5DDEF22AF793F00FDF5ED /* Tic tac multiplayer.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A2088A7B2279D53B005FBE97 /* Tic tac toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic tac toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +106,8 @@
 		A25C651C22A6E5AF000F83B4 /* 3button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3button.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/numberButtons/3button.png"; sourceTree = "<group>"; };
 		A25C651D22A6E5AF000F83B4 /* 11button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 11button.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/numberButtons/11button.png"; sourceTree = "<group>"; };
 		A2A5DDDA22AEE0CB00FDF5ED /* Tic tac pro 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tic tac pro 3.m4a"; path = "../../../Documents/thuis/muziek/Tic tac pro 3.m4a"; sourceTree = "<group>"; };
+		A2A5DDE022AF793D00FDF5ED /* Tic tac multiplayer.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tic tac multiplayer.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A5DDE222AF793D00FDF5ED /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		A2BBAFE722ABEDD800726846 /* bordFour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bordFour.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/bordFour.png"; sourceTree = "<group>"; };
 		A2BBAFED22AD102600726846 /* bordFive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bordFive.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/bordFive.png"; sourceTree = "<group>"; };
 		A2F8A0A3229FFF7000ED1965 /* bord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bord.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/bord.png"; sourceTree = "<group>"; };
@@ -86,6 +127,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2A5DDDD22AF793D00FDF5ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A5DDE322AF793D00FDF5ED /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +143,7 @@
 			children = (
 				A2088AA8227F2FA9005FBE97 /* Default-568h@2x.png */,
 				A2088A7D2279D53B005FBE97 /* Tic tac toe */,
+				A2A5DDE122AF793D00FDF5ED /* Frameworks */,
 				A2088A7C2279D53B005FBE97 /* Products */,
 				A2088A8A2279D53D005FBE97 /* Info.plist */,
 				A2088A7E2279D53B005FBE97 /* AppDelegate.swift */,
@@ -110,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				A2088A7B2279D53B005FBE97 /* Tic tac toe.app */,
+				A2A5DDE022AF793D00FDF5ED /* Tic tac multiplayer.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +226,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A2A5DDE122AF793D00FDF5ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2A5DDE222AF793D00FDF5ED /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2F8A0A722A000B000ED1965 /* music */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,15 +254,34 @@
 				A2088A772279D53B005FBE97 /* Sources */,
 				A2088A782279D53B005FBE97 /* Frameworks */,
 				A2088A792279D53B005FBE97 /* Resources */,
+				A2A5DDF322AF793F00FDF5ED /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A2A5DDEE22AF793F00FDF5ED /* PBXTargetDependency */,
 			);
 			name = "Tic tac toe";
 			productName = "Tic tac toe";
 			productReference = A2088A7B2279D53B005FBE97 /* Tic tac toe.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A2A5DDDF22AF793D00FDF5ED /* Tic tac multiplayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2A5DDF022AF793F00FDF5ED /* Build configuration list for PBXNativeTarget "Tic tac multiplayer" */;
+			buildPhases = (
+				A2A5DDDC22AF793D00FDF5ED /* Sources */,
+				A2A5DDDD22AF793D00FDF5ED /* Frameworks */,
+				A2A5DDDE22AF793D00FDF5ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tic tac multiplayer";
+			productName = "Tic tac multiplayer";
+			productReference = A2A5DDE022AF793D00FDF5ED /* Tic tac multiplayer.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
 
@@ -217,6 +295,9 @@
 				TargetAttributes = {
 					A2088A7A2279D53B005FBE97 = {
 						CreatedOnToolsVersion = 10.2;
+					};
+					A2A5DDDF22AF793D00FDF5ED = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
@@ -234,6 +315,7 @@
 			projectRoot = "";
 			targets = (
 				A2088A7A2279D53B005FBE97 /* Tic tac toe */,
+				A2A5DDDF22AF793D00FDF5ED /* Tic tac multiplayer */,
 			);
 		};
 /* End PBXProject section */
@@ -244,7 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2BBAFE822ABEDD800726846 /* bordFour.png in Resources */,
-				A2A5DDDB22AEE13300FDF5ED /* Tic tac pro 3.m4a in Resources */,
+				A2A5DDF422AF7AA200FDF5ED /* Tic tac pro 3.m4a in Resources */,
 				A212105722A794340037D644 /* 6button.png in Resources */,
 				A212105622A794340037D644 /* 5button.png in Resources */,
 				A2F8A0B122A1A46D00ED1965 /* settings.png in Resources */,
@@ -274,6 +356,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2A5DDDE22AF793D00FDF5ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A5DDF922B006B000FDF5ED /* cross.png in Resources */,
+				A2A5DDF722AF7DF900FDF5ED /* Tic tac pro 2.m4a in Resources */,
+				A2A5DDFA22B006B400FDF5ED /* ring.png in Resources */,
+				A2A5DE0022B175ED00FDF5ED /* Untitled.png in Resources */,
+				A2A5DDFF22B175EA00FDF5ED /* bordFive.png in Resources */,
+				A2A5DDF522AF7C0200FDF5ED /* bord.png in Resources */,
+				A2A5DE0122B175F000FDF5ED /* home.png in Resources */,
+				A2A5DDF622AF7DF600FDF5ED /* Tic tac pro 1.m4a in Resources */,
+				A2A5DDF822AF7DFC00FDF5ED /* Tic tac pro 3.m4a in Resources */,
+				A2A5DDFE22B175E500FDF5ED /* bordFour.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -288,7 +387,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2A5DDDC22AF793D00FDF5ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A5DDFC22B02D6900FDF5ED /* ViewController.swift in Sources */,
+				A2A5DDFB22B0292800FDF5ED /* brain.swift in Sources */,
+				A2A5DDFD22B02DB200FDF5ED /* FourByFourViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2A5DDEE22AF793F00FDF5ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2A5DDDF22AF793D00FDF5ED /* Tic tac multiplayer */;
+			targetProxy = A2A5DDED22AF793F00FDF5ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A2088A822279D53B005FBE97 /* Main.storyboard */ = {
@@ -429,6 +546,7 @@
 		A2088A8E2279D53D005FBE97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7987W92JF6;
@@ -447,6 +565,7 @@
 		A2088A8F2279D53D005FBE97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7987W92JF6;
@@ -457,6 +576,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pruijs.Tic-tac-toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2A5DDF122AF793F00FDF5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7987W92JF6;
+				INFOPLIST_FILE = "Tic tac multiplayer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pruijs.Tic-tac-toe.Tic-tac-multiplayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2A5DDF222AF793F00FDF5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7987W92JF6;
+				INFOPLIST_FILE = "Tic tac multiplayer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pruijs.Tic-tac-toe.Tic-tac-multiplayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,6 +638,15 @@
 			buildConfigurations = (
 				A2088A8E2279D53D005FBE97 /* Debug */,
 				A2088A8F2279D53D005FBE97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2A5DDF022AF793F00FDF5ED /* Build configuration list for PBXNativeTarget "Tic tac multiplayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2A5DDF122AF793F00FDF5ED /* Debug */,
+				A2A5DDF222AF793F00FDF5ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

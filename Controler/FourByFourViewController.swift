@@ -21,7 +21,16 @@ class FourByFourViewController: UIViewController {
         for button in buttons {
             button.setImage(nil, for: UIControl.State.normal)
         }
-        
+        if let bundle = Bundle.main.path(forResource: songs.randomItem(),  ofType: "m4a") {
+            do {
+                song = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: bundle))
+                song.prepareToPlay()
+            } catch {
+                print(error)
+            }
+        } else {
+            print("file not found")
+        }
     }
     
     func printPlayerHasWon() {
@@ -39,21 +48,20 @@ class FourByFourViewController: UIViewController {
             do {
                 song = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: bundle))
                 song.prepareToPlay()
-                song.play()
             } catch {
                 print(error)
             }
         } else {
             print("file not found")
         }
+        song.play()
     }
     
     
     
     
     @IBAction func home(_ sender: Any) {
-        song.stop()
-        board = emtyBoardFour()
+            song.stop()
     }
     
     @IBOutlet var buttons: [UIButton]!
@@ -68,8 +76,8 @@ class FourByFourViewController: UIViewController {
                 sender.setImage(UIImage(named: imageName), for: UIControl.State.normal)
                 printCircelOrCross(row: row, column: column)
                 renderBoard()
-                printWinner()
                 printPlayerHasWon()
+                hasWonLabel.text = printWinner()
             }
         }
         

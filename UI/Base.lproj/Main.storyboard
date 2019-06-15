@@ -164,6 +164,9 @@
                                                     <constraint firstAttribute="width" constant="66" id="zF5-rg-6TN"/>
                                                 </constraints>
                                                 <state key="normal" image="5button.png"/>
+                                                <connections>
+                                                    <segue destination="eK0-AN-vQm" kind="presentation" modalTransitionStyle="crossDissolve" id="40x-Tk-N2j"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -557,6 +560,34 @@
             <point key="canvasLocation" x="828" y="755"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="CNr-8r-5vR">
+            <objects>
+                <viewController id="eK0-AN-vQm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FQd-NG-GEK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bordFive.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lz9-yU-Tex">
+                                <rect key="frame" x="20.666666666666657" y="181.66666666666666" width="372.66666666666674" height="372.66666666666674"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lz9-yU-Tex" secondAttribute="height" multiplier="1:1" id="PfL-91-8E6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16282719373703003" green="0.16298320889472961" blue="0.16285133361816406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lz9-yU-Tex" firstAttribute="centerY" secondItem="FQd-NG-GEK" secondAttribute="centerY" id="BOS-Hq-0nb"/>
+                            <constraint firstItem="Lz9-yU-Tex" firstAttribute="width" secondItem="FQd-NG-GEK" secondAttribute="width" multiplier="0.9" id="lW0-9q-lAi"/>
+                            <constraint firstItem="Lz9-yU-Tex" firstAttribute="centerX" secondItem="FQd-NG-GEK" secondAttribute="centerX" id="rob-Fo-YAi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bzS-aj-qcW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pdq-jv-2f9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="755"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tic_tac_toe" customModuleProvider="target" sceneMemberID="viewController">
@@ -565,103 +596,115 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bord.png" translatesAutoresizingMaskIntoConstraints="NO" id="YOj-Ec-bJD">
-                                <rect key="frame" x="20" y="122" width="374" height="512"/>
+                                <rect key="frame" x="20.666666666666657" y="112" width="372.66666666666674" height="512"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aTQ-fM-058">
-                                <rect key="frame" x="20" y="191" width="374" height="374"/>
+                                <rect key="frame" x="20.666666666666657" y="181.66666666666666" width="372.66666666666674" height="372.66666666666674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="laP-Xs-qrx" userLabel="rowZero">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="119.33333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="119"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzH-Ks-VJK" userLabel="0.0">
-                                                <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="119.33333333333333"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="EzH-Ks-VJK" secondAttribute="height" multiplier="1:1" id="Wb2-IT-rYk"/>
+                                                </constraints>
                                                 <state key="normal" image="cross.png"/>
                                                 <connections>
                                                     <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dxI-Vb-61T"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsy-wN-jL1" userLabel="0.1">
-                                                <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="119.33333333333333"/>
+                                                <rect key="frame" x="126.99999999999997" y="0.0" width="118.66666666666666" height="119"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Zsy-wN-jL1" secondAttribute="height" multiplier="1:1" id="W0m-uv-5xy"/>
+                                                </constraints>
                                                 <state key="normal" image="cross.png"/>
                                                 <connections>
                                                     <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ks-6e-bBG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHT-rd-Ogg" userLabel="0.2">
-                                                <rect key="frame" x="254.66666666666671" y="0.0" width="119.33333333333334" height="119.33333333333333"/>
+                                                <rect key="frame" x="253.66666666666663" y="0.0" width="119" height="119"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="VHT-rd-Ogg" secondAttribute="height" multiplier="1:1" id="CT3-ug-Fte"/>
+                                                </constraints>
                                                 <state key="normal" image="cross.png"/>
                                                 <connections>
                                                     <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nnu-cg-cKa"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="EzH-Ks-VJK" firstAttribute="height" secondItem="laP-Xs-qrx" secondAttribute="height" id="7sU-XQ-RSc"/>
-                                            <constraint firstItem="Zsy-wN-jL1" firstAttribute="height" secondItem="laP-Xs-qrx" secondAttribute="height" id="RAW-Ak-LOy"/>
-                                            <constraint firstItem="VHT-rd-Ogg" firstAttribute="height" secondItem="laP-Xs-qrx" secondAttribute="height" id="Z26-lF-gnH"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s9P-jc-sld" userLabel="rowOne">
-                                        <rect key="frame" x="0.0" y="127.33333333333331" width="374" height="119.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="127.00000000000003" width="372.66666666666669" height="118.66666666666666"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS3-M3-Rmg" userLabel="1.0">
-                                                <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="119.33333333333333"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="119" height="118.66666666666667"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="VS3-M3-Rmg" secondAttribute="height" multiplier="1:1" id="fdt-zt-LDo"/>
+                                                </constraints>
                                                 <state key="normal" image="cross.png"/>
                                                 <connections>
                                                     <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TtT-uz-OHF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8u-uM-X5y" userLabel="1.1">
-                                                <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="119.33333333333333"/>
+                                                <rect key="frame" x="126.99999999999997" y="0.0" width="118.66666666666666" height="118.66666666666667"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="T8u-uM-X5y" secondAttribute="height" multiplier="1:1" id="YmN-Cn-oKV"/>
+                                                </constraints>
                                                 <state key="normal" image="cross.png"/>
                                                 <connections>
                                                     <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7PT-kN-zfy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrB-fK-h8g" userLabel="1.2">
-                                                <rect key="frame" x="254.66666666666671" y="0.0" width="119.33333333333334" height="119.33333333333333"/>
+                                                <rect key="frame" x="253.66666666666663" y="0.0" width="119" height="118.66666666666667"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="TrB-fK-h8g" secondAttribute="height" multiplier="1:1" id="qJd-lj-4nZ"/>
+                                                </constraints>
                                                 <state key="normal" image="cross.png"/>
                                                 <connections>
                                                     <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h8-YM-MrB"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="T8u-uM-X5y" firstAttribute="height" secondItem="s9P-jc-sld" secondAttribute="height" id="T4m-U0-6k2"/>
-                                            <constraint firstItem="VS3-M3-Rmg" firstAttribute="height" secondItem="s9P-jc-sld" secondAttribute="height" id="gsC-WM-W2Y"/>
-                                            <constraint firstItem="TrB-fK-h8g" firstAttribute="height" secondItem="s9P-jc-sld" secondAttribute="height" id="pZF-4O-o7P"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HLG-f4-LRm" userLabel="rowTwo">
-                                        <rect key="frame" x="0.0" y="254.66666666666671" width="374" height="119.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="253.66666666666663" width="372.66666666666669" height="119"/>
                                         <subviews>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgf-jl-9S6" userLabel="2.0">
-                                                <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="119.33333333333333"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="xgf-jl-9S6" secondAttribute="height" multiplier="1:1" id="0XL-my-UPU"/>
+                                                </constraints>
                                                 <state key="normal" image="cross.png"/>
                                                 <connections>
                                                     <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SF3-1x-u1a"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEX-f2-3mS" userLabel="2.1">
-                                                <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="119.33333333333333"/>
+                                                <rect key="frame" x="126.99999999999997" y="0.0" width="118.66666666666666" height="119"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ZEX-f2-3mS" secondAttribute="height" multiplier="1:1" id="L3I-63-mDe"/>
+                                                </constraints>
                                                 <state key="normal" image="cross.png"/>
                                                 <connections>
                                                     <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e2l-H3-0OG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnz-U3-WsK" userLabel="2.2">
-                                                <rect key="frame" x="254.66666666666671" y="0.0" width="119.33333333333334" height="119.33333333333333"/>
+                                                <rect key="frame" x="253.66666666666663" y="0.0" width="119" height="119"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="jnz-U3-WsK" secondAttribute="height" multiplier="1:1" id="4VR-Qf-RAu"/>
+                                                </constraints>
                                                 <state key="normal" image="cross.png"/>
                                                 <connections>
                                                     <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1mm-ar-h6z"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="jnz-U3-WsK" firstAttribute="height" secondItem="HLG-f4-LRm" secondAttribute="height" id="AOk-47-Puv"/>
-                                            <constraint firstItem="xgf-jl-9S6" firstAttribute="height" secondItem="HLG-f4-LRm" secondAttribute="height" id="EcB-h6-n6x"/>
-                                            <constraint firstItem="ZEX-f2-3mS" firstAttribute="height" secondItem="HLG-f4-LRm" secondAttribute="height" id="boI-pP-aRZ"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -711,21 +754,19 @@
                         <color key="backgroundColor" red="0.16194083121827407" green="0.16194083121827407" blue="0.16194083121827407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WWy-qM-nEU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="0MT-lE-L5V"/>
-                            <constraint firstItem="YOj-Ec-bJD" firstAttribute="width" secondItem="aTQ-fM-058" secondAttribute="height" multiplier="1:1" id="7FR-4P-6D0"/>
+                            <constraint firstItem="YOj-Ec-bJD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="1H1-ZU-qAI"/>
                             <constraint firstItem="WWy-qM-nEU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7M8-s4-vWK"/>
-                            <constraint firstItem="aTQ-fM-058" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ACz-gd-Lfc"/>
                             <constraint firstItem="1Ji-se-muj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bhv-Lx-REL"/>
+                            <constraint firstItem="aTQ-fM-058" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EaZ-72-pS0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Ji-se-muj" secondAttribute="bottom" constant="20" id="FPg-B4-4hX"/>
                             <constraint firstItem="WWy-qM-nEU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="GKw-Fa-fYc"/>
+                            <constraint firstItem="YOj-Ec-bJD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H1P-CV-phV"/>
                             <constraint firstItem="vl4-7e-Z8w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HXw-Hc-lwp"/>
-                            <constraint firstItem="aTQ-fM-058" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="500" constant="40" id="TV0-6H-V1z"/>
-                            <constraint firstItem="YOj-Ec-bJD" firstAttribute="centerX" secondItem="aTQ-fM-058" secondAttribute="centerX" id="fBq-IZ-HPs"/>
+                            <constraint firstItem="YOj-Ec-bJD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d3i-5Q-JG2"/>
+                            <constraint firstItem="aTQ-fM-058" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f9J-yG-7rv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vl4-7e-Z8w" secondAttribute="trailing" constant="20" id="fCE-X0-Hec"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aTQ-fM-058" secondAttribute="trailing" constant="20" id="hOw-ht-qo5"/>
-                            <constraint firstItem="aTQ-fM-058" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="500" constant="40" id="jvS-1j-3k4"/>
+                            <constraint firstItem="aTQ-fM-058" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="mL8-zx-dVZ"/>
                             <constraint firstItem="pt2-d9-SwL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mdF-B4-wmQ"/>
-                            <constraint firstItem="aTQ-fM-058" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="s7G-Nx-zax"/>
-                            <constraint firstItem="YOj-Ec-bJD" firstAttribute="centerY" secondItem="aTQ-fM-058" secondAttribute="centerY" id="xez-We-haR"/>
                             <constraint firstItem="pt2-d9-SwL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xrS-BM-uOI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -760,6 +801,7 @@
         <image name="9button.png" width="256" height="256"/>
         <image name="Untitled.png" width="500" height="666.5"/>
         <image name="bord.png" width="512" height="512"/>
+        <image name="bordFive.png" width="512" height="512"/>
         <image name="bordFour.png" width="256" height="256"/>
         <image name="cross.png" width="128" height="128"/>
         <image name="home.png" width="256" height="256"/>
@@ -771,7 +813,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="dta-bj-TmF"/>
         <segue reference="g1E-q3-tA3"/>
-        <segue reference="Tf6-52-wZb"/>
+        <segue reference="dcs-ws-vtA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.16282719373703003" green="0.16298320889472961" blue="0.16285133361816406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

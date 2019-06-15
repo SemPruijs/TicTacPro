@@ -27,7 +27,7 @@ enum Player {
     case cross, ring
 }
 
-let numberOfTilesToWin = 3
+let numberOfTilesToWin = 4
 
 typealias Tile = Player?
 typealias Board = [[Tile]]
@@ -303,15 +303,20 @@ func playerHasWon() -> Player?{
     return nil
 }
 
-func printWinner() {
+func printWinner() -> String {
     let checkWinner = playerHasWon()
     
     if checkWinner == Player.cross {
         print("Cross has won!")
+        return "X has won!"
     } else if checkWinner == Player.ring {
         print("Ring has won!")
+        return "O has won!"
     } else if checkWinner == nil {
         print()
+        return " "
     }
+    
+    return "it's draw"
 }
 
