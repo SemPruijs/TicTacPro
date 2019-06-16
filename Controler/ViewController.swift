@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         board = emptyBoardThree()
         hasWonLabel.text = ""
-        
+        numberOfTilesToWin = 3
         for button in buttons {
             button.setImage(nil, for: UIControl.State.normal)
         }
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func Reset(_ sender: Any) {
+    @IBAction func reset(_ sender: Any) {
         board = emptyBoardThree()
         renderBoard()
         hasWonLabel.text = ""
@@ -82,6 +82,7 @@ class ViewController: UIViewController {
             button.setImage(nil, for: UIControl.State.normal)
         }
     }
+    
     
     
     @IBAction func musicButton(_ sender: Any) {

@@ -27,7 +27,7 @@ enum Player {
     case cross, ring
 }
 
-let numberOfTilesToWin = 4
+var numberOfTilesToWin = 4
 
 typealias Tile = Player?
 typealias Board = [[Tile]]

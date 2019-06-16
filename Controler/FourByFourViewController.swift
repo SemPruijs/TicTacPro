@@ -18,6 +18,7 @@ class FourByFourViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         board = emtyBoardFive()
+        numberOfTilesToWin = 4
         for button in buttons {
             button.setImage(nil, for: UIControl.State.normal)
         }
@@ -88,7 +89,7 @@ class FourByFourViewController: UIViewController {
         }
     }
     
-    @IBAction func reset(_ sender: Any) {
+    @IBAction func restart(_ sender: Any) {
         board = emtyBoardFour()
         renderBoard()
         hasWonLabel.text = ""

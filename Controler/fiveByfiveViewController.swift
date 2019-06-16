@@ -17,6 +17,7 @@ class fiveByfiveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         board = emtyBoardFive()
+        numberOfTilesToWin = 4
         for button in buttons {
             button.setImage(nil, for: UIControl.State.normal)
         }

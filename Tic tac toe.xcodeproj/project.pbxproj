@@ -48,6 +48,7 @@
 		A2A5DE0322B539E600FDF5ED /* fiveByfiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5DE0222B539E600FDF5ED /* fiveByfiveViewController.swift */; };
 		A2A5DE0622B6927F00FDF5ED /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5DE0522B6927F00FDF5ED /* menuViewController.swift */; };
 		A2A5DE0722B6936900FDF5ED /* tic tac pro menu 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A2A5DE0422B6923D00FDF5ED /* tic tac pro menu 1.m4a */; };
+		A2A5DE0922B6C91900FDF5ED /* Restart.png in Resources */ = {isa = PBXBuildFile; fileRef = A2A5DE0822B6C91900FDF5ED /* Restart.png */; };
 		A2BBAFE822ABEDD800726846 /* bordFour.png in Resources */ = {isa = PBXBuildFile; fileRef = A2BBAFE722ABEDD800726846 /* bordFour.png */; };
 		A2BBAFEE22AD102600726846 /* bordFive.png in Resources */ = {isa = PBXBuildFile; fileRef = A2BBAFED22AD102600726846 /* bordFive.png */; };
 		A2F8A0A4229FFF7000ED1965 /* bord.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F8A0A3229FFF7000ED1965 /* bord.png */; };
@@ -114,6 +115,7 @@
 		A2A5DE0222B539E600FDF5ED /* fiveByfiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiveByfiveViewController.swift; sourceTree = "<group>"; };
 		A2A5DE0422B6923D00FDF5ED /* tic tac pro menu 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tic tac pro menu 1.m4a"; sourceTree = "<group>"; };
 		A2A5DE0522B6927F00FDF5ED /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
+		A2A5DE0822B6C91900FDF5ED /* Restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Restart.png; sourceTree = "<group>"; };
 		A2BBAFE722ABEDD800726846 /* bordFour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bordFour.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/bordFour.png"; sourceTree = "<group>"; };
 		A2BBAFED22AD102600726846 /* bordFive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bordFive.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/bordFive.png"; sourceTree = "<group>"; };
 		A2F8A0A3229FFF7000ED1965 /* bord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bord.png; path = "../../../Library/Mobile Documents/6LVTQB9699~com~seriflabs~affinitydesigner/Documents/tic tac pro/bord.png"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				A2F8A0A5229FFFBE00ED1965 /* Untitled.png */,
 				A2F8A0AE22A1A46400ED1965 /* home.png */,
 				A2F8A0B222A1A4B700ED1965 /* music 2.png */,
+				A2A5DE0822B6C91900FDF5ED /* Restart.png */,
 				A2F8A0B022A1A46D00ED1965 /* settings.png */,
 				A25C651C22A6E5AF000F83B4 /* 3button.png */,
 				A25C651722A6E5AF000F83B4 /* 4button.png */,
@@ -359,6 +362,7 @@
 				A2F8A0AB22A000E000ED1965 /* Tic tac pro 2.m4a in Resources */,
 				A2088A842279D53B005FBE97 /* Main.storyboard in Resources */,
 				A212105922A794340037D644 /* 8button.png in Resources */,
+				A2A5DE0922B6C91900FDF5ED /* Restart.png in Resources */,
 				A212105B22A794340037D644 /* 10button.png in Resources */,
 				A2088AA9227F2FA9005FBE97 /* Default-568h@2x.png in Resources */,
 				A25C64EA22A4008B000F83B4 /* playButton.png in Resources */,
