@@ -51,6 +51,18 @@ func emtyBoardFour() -> Board {
     ]
 }
 
+func emtyBoardFive() -> Board {
+    return [
+        [nil, nil, nil, nil, nil],
+        [nil, nil, nil, nil, nil],
+        [nil, nil, nil, nil, nil],
+        [nil, nil, nil, nil, nil],
+        [nil, nil, nil, nil, nil]
+        
+    ]
+}
+
+
 var whoIs: Player {
     return moveCount % 2 == 0 ? .ring : .cross
 }

@@ -17,10 +17,11 @@ class FourByFourViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        board = emtyBoardFour()
+        board = emtyBoardFive()
         for button in buttons {
             button.setImage(nil, for: UIControl.State.normal)
         }
+        
         if let bundle = Bundle.main.path(forResource: songs.randomItem(),  ofType: "m4a") {
             do {
                 song = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: bundle))

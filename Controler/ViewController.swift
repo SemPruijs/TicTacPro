@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         board = emptyBoardThree()
         hasWonLabel.text = ""
+        
         for button in buttons {
             button.setImage(nil, for: UIControl.State.normal)
         }
