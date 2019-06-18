@@ -900,20 +900,22 @@
                                     <segue destination="CjV-Vy-WpI" kind="presentation" modalTransitionStyle="crossDissolve" id="w6G-US-g89"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcd-9C-lAm">
-                                <rect key="frame" x="168.66666666666666" y="791" width="77" height="51"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <state key="normal" title="reset">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOF-tf-Ivu">
+                                <rect key="frame" x="344" y="792" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="djf-vy-cML"/>
+                                    <constraint firstAttribute="width" secondItem="MOF-tf-Ivu" secondAttribute="height" multiplier="1:1" id="ziB-ER-LJc"/>
+                                </constraints>
+                                <state key="normal" image="Restart.png"/>
                                 <connections>
-                                    <action selector="reset:" destination="eK0-AN-vQm" eventType="touchUpInside" id="Lb1-7k-5Qe"/>
+                                    <action selector="reset:" destination="eK0-AN-vQm" eventType="touchUpInside" id="jna-di-jfS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.16282719373703003" green="0.16298320889472961" blue="0.16285133361816406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4ct-cx-ZlR" firstAttribute="top" secondItem="bzS-aj-qcW" secondAttribute="top" id="49B-lM-237"/>
+                            <constraint firstItem="bzS-aj-qcW" firstAttribute="trailing" secondItem="MOF-tf-Ivu" secondAttribute="trailing" constant="20" id="4J9-PM-MFI"/>
                             <constraint firstItem="O7V-eO-eUC" firstAttribute="centerX" secondItem="FQd-NG-GEK" secondAttribute="centerX" id="7hq-JE-aah"/>
                             <constraint firstItem="Lz9-yU-Tex" firstAttribute="centerY" secondItem="FQd-NG-GEK" secondAttribute="centerY" id="BOS-Hq-0nb"/>
                             <constraint firstItem="O7V-eO-eUC" firstAttribute="width" secondItem="FQd-NG-GEK" secondAttribute="width" multiplier="0.85" id="OFg-Cb-rtm"/>
@@ -924,11 +926,10 @@
                             <constraint firstItem="eUW-xN-wJN" firstAttribute="leading" secondItem="bzS-aj-qcW" secondAttribute="leading" constant="20" id="aiZ-is-FIM"/>
                             <constraint firstItem="bzS-aj-qcW" firstAttribute="trailing" secondItem="4ct-cx-ZlR" secondAttribute="trailing" constant="20" id="alZ-Pe-g0j"/>
                             <constraint firstItem="Lz9-yU-Tex" firstAttribute="width" secondItem="FQd-NG-GEK" secondAttribute="width" multiplier="0.9" id="lW0-9q-lAi"/>
-                            <constraint firstItem="Rcd-9C-lAm" firstAttribute="centerX" secondItem="FQd-NG-GEK" secondAttribute="centerX" id="piK-XR-dR8"/>
-                            <constraint firstItem="bzS-aj-qcW" firstAttribute="bottom" secondItem="Rcd-9C-lAm" secondAttribute="bottom" constant="20" id="qfc-lX-gCr"/>
                             <constraint firstItem="Lz9-yU-Tex" firstAttribute="centerX" secondItem="FQd-NG-GEK" secondAttribute="centerX" id="rob-Fo-YAi"/>
                             <constraint firstItem="q4H-nd-Tgs" firstAttribute="top" secondItem="bzS-aj-qcW" secondAttribute="top" constant="45" id="st1-x1-qVM"/>
                             <constraint firstItem="q4H-nd-Tgs" firstAttribute="centerX" secondItem="FQd-NG-GEK" secondAttribute="centerX" id="uxM-s0-BPG"/>
+                            <constraint firstItem="bzS-aj-qcW" firstAttribute="bottom" secondItem="MOF-tf-Ivu" secondAttribute="bottom" constant="20" id="wVR-aL-YPK"/>
                             <constraint firstItem="q4H-nd-Tgs" firstAttribute="width" secondItem="FQd-NG-GEK" secondAttribute="width" id="wZA-Nk-RrF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bzS-aj-qcW"/>
@@ -1192,7 +1193,7 @@
         <segue reference="dta-bj-TmF"/>
         <segue reference="40x-Tk-N2j"/>
         <segue reference="g1E-q3-tA3"/>
-        <segue reference="Tf6-52-wZb"/>
+        <segue reference="w6G-US-g89"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.16282719373703003" green="0.16298320889472961" blue="0.16285133361816406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

@@ -64,6 +64,7 @@ class fiveByfiveViewController: UIViewController {
     @IBOutlet weak var hasWonLabel: UILabel!
     @IBOutlet var buttons: [UIButton]!
     
+   
     @IBAction func reset(_ sender: Any) {
         board = emtyBoardFive()
         renderBoard()
@@ -72,6 +73,7 @@ class fiveByfiveViewController: UIViewController {
             button.setImage(nil, for: UIControl.State.normal)
         }
     }
+    
     
     
     @IBAction func buttons(_ sender: UIButton) {
